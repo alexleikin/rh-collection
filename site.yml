@@ -7,6 +7,7 @@
       - hub1-rh-certified
   collections:
     - ansible.tower
+    - automaton_hub
 
 
 
@@ -20,3 +21,4 @@
       tower_username: 'admin'
       validate_certs: no
       galaxy_credentials: "{{ galaxy_credential }}"
+
