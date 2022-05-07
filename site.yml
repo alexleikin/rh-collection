@@ -5,9 +5,9 @@
   vars:
     galaxy_credential:
       - hub1-rh-certified
+      - automaton_hub
   collections:
     - ansible.tower
-    - automaton_hub
 
 
 
