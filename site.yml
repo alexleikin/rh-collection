@@ -1,0 +1,18 @@
+---
+- name: playbook for creating Organizations
+  hosts: localhost
+  gather_facts: False
+  collections:
+    - ansible.tower
+
+
+
+  tasks:
+  - name: create Organizatoin
+    tower_organization:
+      name: "Foo"
+      description: "Foo bar organization"
+      state: present
+      tower_password: 'xPhrngm'
+      tower_username: 'admin'
+      validate_certs: no
