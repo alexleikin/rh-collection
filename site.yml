@@ -20,4 +20,3 @@
       tower_username: 'admin'
       validate_certs: no
       galaxy_credentials: "{{ galaxy_credential }}"
-      custom_virtualenv: '/var/lib/awx/customEnv/venv'
