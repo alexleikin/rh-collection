@@ -22,4 +22,5 @@
       validate_certs: no
       max_hosts: 5
       galaxy_credentials: "{{ galaxy_credential }}"
+      tower_host: tower.devhomeit.ca
 
