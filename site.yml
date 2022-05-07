@@ -2,6 +2,9 @@
 - name: playbook for creating Organizations
   hosts: localhost
   gather_facts: False
+  vars:
+    galaxy_credential:
+      - hub1-rh-certified
   collections:
     - ansible.tower
 
@@ -10,11 +13,10 @@
   tasks:
   - name: create Organizatoin
     tower_organization:
-      name: "Foo"
-      description: "Foo bar organization"
+      name: "Alex_Org"
+      description: "Alex Test Organization"
       state: present
       tower_password: 'xPhrngm'
       tower_username: 'admin'
       validate_certs: no
-      galaxy_credentials:
-        - hub1-rh-certified
+      galaxy_credentials: "{{ galaxy_credential }}"
