@@ -16,3 +16,5 @@
       tower_password: 'xPhrngm'
       tower_username: 'admin'
       validate_certs: no
+      galaxy_credentials:
+        - hub1-rh-certified
