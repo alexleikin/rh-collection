@@ -19,7 +19,7 @@
       state: present
       tower_password: 'xPhrngm'
       tower_username: 'admin'
-      validate_certs: no
+      validate_certs: yes
       max_hosts: 5
       galaxy_credentials: "{{ galaxy_credential }}"
       tower_host: tower.devhomeit.ca
